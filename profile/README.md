@@ -12,6 +12,8 @@ The repository [metabase](https://github.com/building-envelope-data/metabase) co
 
 The repository [machine](https://github.com/building-envelope-data/machine) can be used to prepare a server. Then, an instance of the repository [database](https://github.com/building-envelope-data/database) can run on this server.
 
+[![Watch the video introduction](https://img.youtube.com/vi/QsulJnpvuh0/maxresdefault.jpg)](https://www.youtube.com/watch?v=QsulJnpvuh0)
+
 ## Acknowledgements
 
 This work was funded by the German Federal Ministry for Economic Affairs and Climate Action under Grants 03ET1560A and 03EN1070A, based on a decision by the German Bundestag, by a Fraunhofer ICON Grant and by the Assistant Secretary for Energy Efficiency and Renewable Energy, Building Technologies Program, of the U.S. Department of Energy, under Contract No. DE-AC02-05CH11231.
