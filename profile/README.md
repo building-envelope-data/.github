@@ -38,6 +38,8 @@ The GraphQL queries are used fo the metadata of data sets to find suitable data 
 
 The screenshot shows an example of a GraphQL query to the metabase for all optical data. The field “locator” returns the URL of the optical data set. A GET HTTPS request to the URL returns the optical data set. In order to access data sets from IGSDB, you can register and login at https://igsdb-v2.herokuapp.com/ .
 
+![screenshot_allOpticalData](https://github.com/user-attachments/assets/f96ef4ec-f415-4f49-a27f-c731b62c6fb2)
+
 # Acknowledgements
 
 This work was funded by the German Federal Ministry for Economic Affairs and Climate Action under Grants 03ET1560A and 03EN1070A, based on a decision by the German Bundestag, by a Fraunhofer ICON Grant and by the Assistant Secretary for Energy Efficiency and Renewable Energy, Building Technologies Program, of the U.S. Department of Energy, under Contract No. DE-AC02-05CH11231.
