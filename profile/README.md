@@ -6,6 +6,8 @@
 
 [Video introduction to the product data network](#video-introduction-to-the-product-data-network)
 
+[How can I use the product data network with my software application?](#how-can-i-use-the-product-data-network-with-my-software-application)
+
 [Acknowledgements](#acknowledgements)
 
 # The product data network buildingenvelopedata.org
@@ -27,6 +29,14 @@ The repository [machine](https://github.com/building-envelope-data/machine) can 
 # Video introduction to the product data network
 
 [![Watch the video introduction](https://img.youtube.com/vi/QsulJnpvuh0/maxresdefault.jpg)](https://www.youtube.com/watch?v=QsulJnpvuh0)
+
+# How can I use the product data network with my software application?
+
+Your planning application needs to send a GraphQL query to the metabase https://www.buildingenvelopedata.org/graphql/ . The API of the metabase is specified by https://github.com/building-envelope-data/api . At https://github.com/building-envelope-data/api/blob/develop/queries/metabase/tutorial.graphql , you find example queries to the metabase.
+
+The GraphQL queries are used fo the metadata of data sets to find suitable data sets. The GraphQL querie to the metabase must be valid against https://github.com/building-envelope-data/api/blob/develop/apis/metabase.graphql . A data set itself is a JSON blob which must be valid against the JSON schemas https://github.com/building-envelope-data/api/tree/develop/schemas . Optical data sets must be valid against https://github.com/building-envelope-data/api/blob/develop/schemas/opticalData.json .
+
+The screenshot shows an example of a GraphQL query to the metabase for all optical data. The field “locator” returns the URL of the optical data set. A GET HTTPS request to the URL returns the optical data set. In order to access data sets from IGSDB, you can register and login at https://igsdb-v2.herokuapp.com/ .
 
 # Acknowledgements
 
