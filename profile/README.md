@@ -6,7 +6,11 @@
 
 [Video introduction to the product data network](#video-introduction-to-the-product-data-network)
 
+[How can I add my product data to the product data network?](#how-can-i-add-my-product-data-to-the-product-data-network)
+
 [How can I use the product data network with my software application?](#how-can-i-use-the-product-data-network-with-my-software-application)
+
+[Do you have any other question?](#do-you-have-any-other-question)
 
 [Acknowledgements](#acknowledgements)
 
@@ -30,6 +34,14 @@ The repository [machine](https://github.com/building-envelope-data/machine) can 
 
 [![Watch the video introduction](https://img.youtube.com/vi/QsulJnpvuh0/maxresdefault.jpg)](https://www.youtube.com/watch?v=QsulJnpvuh0)
 
+# How can I add my product data to the product data network?
+
+When you are a manufacturer of building envelope components and part of an association, you can ask your association if they provide a database which is connected to the product data network.
+
+If you have your own product database, you can ask your software developers to add an API according to the specification https://github.com/building-envelope-data/api . There are [many open-source frameworks](https://graphql.org/community/tools-and-libraries/) which make it easy to create such an API. The software developers need to take your product data and to return the data sets in the format defined by https://github.com/building-envelope-data/api/tree/develop/schemas . For example, optical data sets must be valid against https://github.com/building-envelope-data/api/blob/develop/schemas/opticalData.json . An example of such a data set is https://github.com/building-envelope-data/api/blob/develop/tests/valid/opticalData/solarTransmittanceReflectance.json . Please also [raise an issue](https://github.com/building-envelope-data/api/issues/new) so that we know what you are planning.
+
+When your database with the new API is ready, we can connect them easily to the product data network. Your product data can then be accessed by all software applications which use the product data network. As part of the access right management system, you can restrict the access to certain application, institutions or users.
+
 # How can I use the product data network with my software application?
 
 Your planning application needs to send a GraphQL query to the metabase https://www.buildingenvelopedata.org/graphql/ . The API of the metabase is specified by https://github.com/building-envelope-data/api . At https://github.com/building-envelope-data/api/blob/develop/queries/metabase/tutorial.graphql , you find example queries to the metabase.
@@ -39,6 +51,10 @@ The GraphQL queries are used fo the metadata of data sets to find suitable data 
 The screenshot shows an example of a GraphQL query to the metabase for all optical data. The field “locator” returns the URL of the optical data set. A GET HTTPS request to the URL returns the optical data set. In order to access data sets from IGSDB, you can register and login at https://igsdb-v2.herokuapp.com/ .
 
 ![screenshot_allOpticalData](https://github.com/user-attachments/assets/f96ef4ec-f415-4f49-a27f-c731b62c6fb2)
+
+# Do you have any other question?
+
+Please send us your questions as an "issue" with https://github.com/building-envelope-data/api/issues/new . We want to support you as good as we can.
 
 # Acknowledgements
 
