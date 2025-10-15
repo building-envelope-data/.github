@@ -44,7 +44,7 @@ When your database with the new API is ready, we can connect them easily to the 
 
 # How can I use the product data network with my software application?
 
-Your planning application needs to send a GraphQL query to the metabase https://www.buildingenvelopedata.org/graphql/ . The API of the metabase is specified by https://github.com/building-envelope-data/api . At https://github.com/building-envelope-data/api/blob/develop/queries/metabase/tutorial.graphql , you find example queries to the metabase.
+Your planning application needs to send a GraphQL query to the metabase https://www.buildingenvelopedata.org/graphql/ . The API of the metabase is specified by https://github.com/building-envelope-data/api . At https://github.com/building-envelope-data/api/blob/develop/requests/metabase/tutorial.graphql , you find example queries to the metabase.
 
 The GraphQL queries are used fo the metadata of data sets to find suitable data sets. The GraphQL querie to the metabase must be valid against https://github.com/building-envelope-data/api/blob/develop/apis/metabase.graphql . A data set itself is a JSON blob which must be valid against the JSON schemas https://github.com/building-envelope-data/api/tree/develop/schemas . Optical data sets must be valid against https://github.com/building-envelope-data/api/blob/develop/schemas/opticalData.json .
 
