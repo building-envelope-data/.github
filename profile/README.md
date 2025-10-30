@@ -10,6 +10,8 @@
 
 [How can I use the product data network with my software application?](#how-can-i-use-the-product-data-network-with-my-software-application)
 
+[Publications](#publications)
+
 [Do you have any other question?](#do-you-have-any-other-question)
 
 [Acknowledgements](#acknowledgements)
@@ -53,6 +55,10 @@ The GraphQL queries are used fo the metadata of datasets to find suitable datase
 The screenshot shows an example of a GraphQL query to the metabase for all optical data. The field “locator” returns the URL of the optical dataset. A GET HTTPS request to the URL returns the optical dataset. In order to access datasets from IGSDB, you can register and login at https://igsdb-v2.herokuapp.com/ .
 
 ![screenshot_allOpticalData](https://github.com/user-attachments/assets/f96ef4ec-f415-4f49-a27f-c731b62c6fb2)
+
+# Publications
+
+C. Maurer, S. Wacker, B. Bueno, J.C. Jonsson, H. Lamy, D. Bush, M. Shi, W. Sprenger, R. Mitchell, H.R. Wilson, D.C. Curcija, T.E. Kuhn, A product data network to enable faster, easier, and better planning of building envelopes, Journal of Building Engineering 107 (2025) 112582, https://doi.org/10.1016/j.jobe.2025.112582 .
 
 # Do you have any other question?
 
